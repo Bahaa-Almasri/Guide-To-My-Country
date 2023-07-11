@@ -1,0 +1,262 @@
+body {
+	background-color: white;
+}
+
+header {
+	background-color: #DE2910;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+nav {
+	background-color: #fff;
+	padding: 10px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #DE2910;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+nav a:hover {/*element:selector
+			when we hover, this happens*/
+	color: white;
+	background-color: #DE2910;
+	padding: 5px 10px;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+main {
+	padding: 20px;
+}
+
+iframe {
+	margin-top: 20px;
+	border: none;
+}
+
+footer {
+	background-color: #DE2910;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+.card {
+	background-color: #fff;
+	color: #333;
+	border: 1px solid #af2828;
+	border-radius: 5px;
+	transition: all 0.3s ease-in-out;
+	width: calc(33.33%); /*33% - 20 px because margin is 20px, then the cards can fit on 100% equally on screen, inside the cacl method*/
+	margin-bottom: 20px;
+	height: 50%;
+	padding:20px;
+	margin: 20px;
+}
+
+.card:hover {/*hover is called a selector*/
+	box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.2);
+	transform: translateY(-5px);
+	/*translate Y for the y axis*/
+}
+
+.card h3 {
+	margin: 20px 0 10px;
+	font-size: 24px;
+	text-align: center;
+}
+
+.card p {
+	margin: 0 20px 20px;
+	font-size: 16px;
+	text-align: justify;
+}
+
+.card img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.card a{
+	text-decoration: none;/*removes the underlining*/
+	/*color: to change the color*/;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media all and (min-width: 1000px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/*Quite often when coding a website, you will be using a computer screen, and you’ll probably define your styles based on how it looks on that screen.
+
+When you code for mobile first, you instead choose default styles that are suitable for small screens such as smartphones. You then add extra code to make adjustments for bigger screens.
+
+Since more and more people browse the internet on their smartphones or tablets rather than on a computer, it’s good practice to develop your website with this in mind.*/
+
+@media all and (min-width: 1600px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}
+
+.sideNoteStyle {
+	border: dotted 1px rgb(255, 0, 0);
+	background-color: rgb(0, 225, 255);
+	padding: 0.5em;
+	margin: 0.5em;
+	width:40%;
+}
+.specialText {
+	color: cyan;
+	font-size: larger;
+}
+
+.absPos {
+    position: absolute;
+}
+
+.relPos {
+    position: relative;
+}
+
+#photoBox {
+    width: 33%;
+    height: 50%;
+}
+
+#imgHorse{
+	width:120px;
+	top:120px;
+	left:70px;
+	z-index:7;
+}
+
+#imgTeaCat{
+	width:250px;
+	top:210px;
+	left:100px;
+	z-index:10;
+}
+
+#imgHorse {
+	width: 120px;
+	top: 200px;
+	left: 390px;
+	z-index: 10;
+}
+
+#imgSheep {
+	width: 200px;
+	top: 100px;
+	left: 20px;
+	z-index: 8;
+}
+
+
+#imgCoast {
+	width: 150px;
+	top: 250px;
+	left: 10px;
+	z-index: 5;
+}
+
+#imgTrees {
+	width: 110px;
+	top: 65px;
+	left:205px;
+	z-index:9;
+}
+
+#imgStreet {
+	width: 180px;
+	top: 90px;
+	left: 310px;
+	z-index: 6;
+}
+
+.collagePhoto {
+	border: 1px solid white;
+	y
+
+.relPos{
+	position: relative;
+} 
+
+/*Sometimes we can get errors but the code will work just fine*/
+
+.absPos {
+	position: absolute;
+}
+
+.light-box {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.8);
+    padding: 20px;
+}
+
+.light-box img {
+    max-width: 100%;
+}
+
+.light-box h3 {
+    color: white;
+    margin-top: 0;
+}
+
+.light-box p {
+    color: white;
+}
+
+.light-box:target {
+    display: block;
+}
+/*When we click on it, we have something else related to it. When we click on html
+css.... when we click on html we have the code in it, when we click on css, we have the code in it.
+When we click on it, we are targeting it.*/
+
+#preloader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('Images/Preloader.gif') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}

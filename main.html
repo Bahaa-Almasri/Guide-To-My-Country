@@ -1,0 +1,86 @@
+<html>
+<head>
+	<title>Discover Lebanon</title>
+	<link rel="stylesheet" href="style.css">
+<!--<script>
+
+		var loader = document.getElementById("preloader");
+
+		window.addEventListener("load", function () {
+		loader.style.display = "none";
+		})
+
+</script>-->
+
+	<!--We put the js code in the head if we want it to be done before the body.
+	When we put the js code in the body, it is better to be in the end.-->
+</head>
+<!--When position: static, we cant control the top, left,.... of the image, they cant be next to each other, or above each other,
+they move with the style of the page. They are from top to bottom. It is the default for the elements.
+When position: relative, we change the element based on its relative(initial) positions. If we put top:100px,
+it is a 100px from its the top border of its initial place.
+When position: fixed, the position will stay the same when we scroll through the page. It is relative to the borders of the screen.
+Usually with menus. Regardless of the screen size.
+When positions: absolute, it is relative to the nearest positioned element(relative or absolute), if there is no positioned relative, it'll be
+relative to the whole viewport(the whole webpage). The elements can be overlapped, unlike the relative. It is the most flexible one.
+The application windows screen when we open it is absolute because we can move it around....
+If the position is absolute, we can fill the gaps between the images, if relative, we can't.
+When position: sticky, it toggles between relative and fixed. We can scroll through it, and when it reaches the top of the
+screen it sticks up to the screen and becomes fixed at the top. But if we don't scroll outside its vicinity, it is not fixed.
+When float: right, the image will go right relative to its initial position.-->
+<!--line-height: for line spacing between each line.-->
+<body>
+
+	<header>
+		<img src="Images/flag.png" alt="Lebanon flag" width="150"><!--The width here is not a css property-->
+		<h1>Discover Lebanon</h1>
+		<!--In the aside part of an html page, we can put the nav for inside the same html-->
+		<!--If you make a table, use th in the first row only, for the head names, use td in other rows for other data-->
+
+		<nav>
+			<ul>
+				<li><a href="food.html">Food</a></li>
+				<li><a href="attractions.html">Attractions</a></li>
+				<li><a href="music.html">Music</a></li><!--Let the html pages be in the same folder-->
+			</ul>
+		</nav>
+	</header>
+
+		<h2>Welcome to Lebanon!</h2>
+		<p>Lebanon is a small but beautiful country located in the Middle East, bordered by Syria to the north and east, and Israel to the south. The country is known for its rich history, stunning landscapes, delicious cuisine, and vibrant music scene.</p>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d535454.0078427907!2d35.59183800314558!3d33.91917105121716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f5c9d5a5e5f5f%3A0xb5627d4e4e4b4c39!2sLebanon!5e0!3m2!1sen!2sus!4v1645721263261!5m2!1sen!2sus" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen></iframe>
+		<!--Always embed, don't copy the link-->
+
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/No045JOHp9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/No045JOHp9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/No045JOHp9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/No045JOHp9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/No045JOHp9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/No045JOHp9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/No045JOHp9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/No045JOHp9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+		<div id="preloader">
+		</div>
+<footer>
+	<p>Prepared by Bahaa Almasri</p>
+	<!--In the footer, we can place the date of publication, the sponsors, partners...-->
+</footer>
+
+<script>
+window.addEventListener("load", function () {
+	const preloader = document.getElementById("preloader");
+	preloader.style.display = "none";
+});
+</script>
+
+</body>
+</html>
